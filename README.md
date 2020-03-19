@@ -1,3 +1,7 @@
+
+* Deployed at: [https://slakeyj.github.io/swapi-api-project](https://slakeyj.github.io/swapi-api-project),
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
