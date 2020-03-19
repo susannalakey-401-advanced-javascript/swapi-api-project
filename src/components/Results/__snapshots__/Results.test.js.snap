@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Results /> renders to the page 1`] = `
+<Fragment>
+  <pre>
+    {
+  "things": "hello"
+}
+  </pre>
+  <pre>
+    {
+  "stuff": "stuff"
+}
+  </pre>
+</Fragment>
+`;

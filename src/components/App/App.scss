@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(219, 241, 241);
+  font-family: 'Staatliches', cursive;
+  width: 100%;
+}
+
+.App {
+
+  flex-direction: column
+}
+form {
+  .text-input {
+    width: 250px;
+    height: 20px;
+    margin: 40px 20px 20px 20px;
+    font-size: 15px;
+  }
+
+  button {
+    width: 100px;
+    height: 30px;
+    font-size: 20px;
+    margin: 10px;
+    height: 40px;
+    font-family: 'Staatliches', cursive;
+    background: rgb(255, 253, 253);
+  }
+
+  label {
+    font-size: 22px;
+    margin-left: 50px;
+  }
+
+}
+

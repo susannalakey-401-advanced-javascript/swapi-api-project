@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> renders to the page 1`] = `
+<Fragment>
+  <div
+    className="App"
+  >
+    <Header />
+    <form>
+      <label>
+        Enter API URL:
+        <input
+          className="text-input"
+          onChange={[Function]}
+          type="text"
+          value="https://swapi.co/api/people/"
+        />
+      </label>
+      <div>
+        <button
+          className="submit"
+          onClick={[Function]}
+          type="button"
+        >
+          GET
+        </button>
+        <button
+          className="submit"
+          onClick={[Function]}
+          type="button"
+        >
+          PUT
+        </button>
+        <button
+          className="submit"
+          onClick={[Function]}
+          type="button"
+        >
+          POST
+        </button>
+        <button
+          className="submit"
+          onClick={[Function]}
+          type="button"
+        >
+          DELETE
+        </button>
+      </div>
+    </form>
+    <Results
+      headers={Object {}}
+    />
+    <Footer />
+  </div>
+</Fragment>
+`;
