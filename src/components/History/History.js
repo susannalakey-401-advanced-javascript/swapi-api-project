@@ -17,7 +17,7 @@ const History = () => {
       <p>Search History</p>
       <ul>
         {getUrlFromStorage().map(url => (
-          <li key={url}><a href={`/?url=${url}`}>{url}</a></li>
+          <li key={url}><a href={`swapi-api-project/?url=${url}`}>{url}</a></li>
         ))}
       </ul>
     </div>
