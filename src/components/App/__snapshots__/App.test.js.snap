@@ -6,6 +6,15 @@ exports[`<App /> renders to the page 1`] = `
     className="App"
   >
     <Header />
+    <If
+      condition={false}
+    >
+      <p
+        className="fetch-error"
+      >
+        Please enter a valid search URL
+      </p>
+    </If>
     <form>
       <label>
         Enter API URL:
@@ -18,7 +27,7 @@ exports[`<App /> renders to the page 1`] = `
       </label>
       <div>
         <button
-          className="submit"
+          className="submit get"
           onClick={[Function]}
           type="button"
         >
@@ -47,9 +56,21 @@ exports[`<App /> renders to the page 1`] = `
         </button>
       </div>
     </form>
-    <Results
-      headers={Object {}}
-    />
+    <If
+      condition={false}
+    >
+      <img
+        className="loading"
+        src="loading.gif"
+      />
+    </If>
+    <If
+      condition={true}
+    >
+      <Results
+        headers={Object {}}
+      />
+    </If>
     <Footer />
   </div>
 </Fragment>

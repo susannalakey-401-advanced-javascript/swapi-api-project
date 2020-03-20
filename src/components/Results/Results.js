@@ -1,10 +1,6 @@
 import React from 'react';
 import './Results.scss';
 
-
-
-
-
 const Results = ({ body, headers }) => {
   if (!body) {
     return null;
