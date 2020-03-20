@@ -1,5 +1,5 @@
 import React from 'react';
-// import { If, When, Unless } from '../Conditionals/Conditionals'
+import './History.scss'
 
 
 const getUrlFromStorage = () => {
@@ -13,11 +13,14 @@ const getUrlFromStorage = () => {
 
 const History = () => {
   return (
-    <ul>
-      {getUrlFromStorage().map(url => (
-        <li key={url}><a href={`/?url=${url}`}>{url}</a></li>
-      ))}
-    </ul>
+    <div className="search-list">
+      <p>Search History</p>
+      <ul>
+        {getUrlFromStorage().map(url => (
+          <li key={url}><a href={`/?url=${url}`}>{url}</a></li>
+        ))}
+      </ul>
+    </div>
   )
 }
 

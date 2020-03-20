@@ -24,7 +24,6 @@ class App extends React.Component {
       body: undefined,
       headers: {},
     })
-    console.log('start')
     this.setState({ loading: true })
     const response = await fetch(this.state.url, { method, mode: 'cors' })
     const body = await response.json()
@@ -34,7 +33,6 @@ class App extends React.Component {
       loading: false,
     })
     this.setLocalStorage();
-    console.log('end')
   }
 
   handleChange = e => {
@@ -88,7 +86,7 @@ class App extends React.Component {
             </label>
             <div>
 
-              <button type="button" onClick={() => { this.getResults('GET') }} className="submit">GET</button>
+              <button type="button" onClick={() => { this.getResults('GET') }} className="submit get">GET</button>
               <button type="button" onClick={() => { this.getResults('PUT') }} className="submit">PUT</button>
               <button type="button" onClick={() => { this.getResults('POST') }} className="submit">POST</button>
               <button type="button" onClick={() => { this.getResults('DELETE') }} className="submit">DELETE</button>
