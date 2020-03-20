@@ -1,5 +1,5 @@
 
-* Deployed at: [https://slakeyj.github.io/swapi-api-project](https://slakeyj.github.io/swapi-api-project),
+* Deployed at: [https://susannalakey-401-advanced-javascript.github.io/](https://susannalakey-401-advanced-javascript.github.io/),
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -2,7 +2,7 @@
   "name": "swapi-api-project",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://slakeyj.github.io/swapi-api-project",
+  "homepage": "https://slakeyj.github.io/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
