@@ -1,6 +1,8 @@
 
 * Deployed at: [https://susannalakey-401-advanced-javascript.github.io/](https://susannalakey-401-advanced-javascript.github.io/),
 
+* [Using a hashRouter](https://levelup.gitconnected.com/deploying-a-create-react-app-with-routing-to-github-pages-f386b6ce84c2)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
