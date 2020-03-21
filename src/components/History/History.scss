@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
+
+.search-list{
+  font-family: 'Hind', sans-serif;
+  background-color: white;
+  text-align: center;
+  p {
+    padding-top: 20px;
+    margin-left: 30px;
+    font-size: 24px;
+  }
+  ul {
+    margin: 10px;
+  }
+  li {
+    list-style-type: none;
+    
+    padding: 10px;
+  }
+}

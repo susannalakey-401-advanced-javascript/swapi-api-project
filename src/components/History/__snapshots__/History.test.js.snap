@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<History /> renders to the page 1`] = `
+<div
+  className="search-list"
+>
+  <p>
+    Search History
+  </p>
+  <ul />
+</div>
+`;
