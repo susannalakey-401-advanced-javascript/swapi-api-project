@@ -7,6 +7,7 @@ const getUrlFromStorage = () => {
   if (urlsRaw) {
     return JSON.parse(urlsRaw);
   }
+  // if there's nothing in localStorage, send back an empty array
   return [];
 }
 

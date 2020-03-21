@@ -24,21 +24,28 @@ class App extends React.Component {
       body: undefined,
       headers: {},
     })
-    this.setState({ loading: true })
-    const response = await fetch(this.state.url, { method, mode: 'cors' })
-    const body = await response.json()
-    this.setState({
-      body: body,
-      headers: [...response.headers.entries()],
-      loading: false,
-    })
-    this.setLocalStorage();
+    try {
+      this.setState({ loading: true })
+      const response = await fetch(this.state.url, { method, mode: 'cors' })
+      const body = await response.json()
+      this.setState({
+        body: body,
+        headers: [...response.headers.entries()],
+        loading: false,
+      })
+      this.setLocalStorage();
+    } catch (e) {
+      this.setState({
+        body: 'Please enter a valid search URL',
+        headers: undefined,
+        loading: false
+      })
+    }
   }
 
   handleChange = e => {
     this.setState({ url: e.target.value });
   }
-
 
 
   // only runs first time app.js renders
@@ -73,9 +80,6 @@ class App extends React.Component {
       <>
         <div className="App">
           <Header />
-          <If condition={this.state.body === null}>
-            <p className="fetch-error">Please enter a valid search URL</p>
-          </If>
 
           <form>
             <label>
