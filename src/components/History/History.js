@@ -1,5 +1,8 @@
 import React from 'react';
 import './History.scss'
+import { Link } from 'react-router-dom'
+
+
 
 
 const getUrlFromStorage = () => {
@@ -18,10 +21,10 @@ const History = () => {
       <p>Search History</p>
       <ul>
         {getUrlFromStorage().map(url => (
-          <li key={url}><a href={`/?url=${url}`}>{url}</a></li>
+          <li key={url}><Link to={{ pathname: '/', search: `?url=${url}` }}>{url}</Link></li>
         ))}
       </ul>
-    </div>
+    </div >
   )
 }
 
