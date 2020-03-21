@@ -5,6 +5,8 @@ import Results from '../Results/Results'
 import Footer from '../Footer/Footer'
 import { If, When, Unless } from '../Conditionals/Conditionals'
 import loading from './loading.gif'
+// library for parsing a query string
+import queryString from 'query-string';
 
 
 class App extends React.Component {
@@ -50,7 +52,12 @@ class App extends React.Component {
 
   // only runs first time app.js renders
   componentDidMount() {
-    const url = new URLSearchParams(window.location.search).get('url');
+    const urlParts = window.location.href.split('?');
+    const query = urlParts[1];
+    // query = url=https://swapi.co/api/people/
+    const queryParams = queryString.parse(`?${query}`);
+    // queryParams = {url: '?https://swapi.co/api/people/'}
+    const url = queryParams.url;
     if (url) {
       this.setState({
         url

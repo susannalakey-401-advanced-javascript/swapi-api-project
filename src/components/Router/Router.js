@@ -1,13 +1,13 @@
 
 import React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 import History from '../History/History'
 import Navbar from '../Navbar/Navbar'
 import App from '../App/App'
 
 const Router = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Navbar />
       <Switch>
         <Route path="/" exact>
@@ -17,7 +17,7 @@ const Router = () => {
           <History />
         </Route>
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
