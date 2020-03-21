@@ -6,15 +6,6 @@ exports[`<App /> renders to the page 1`] = `
     className="App"
   >
     <Header />
-    <If
-      condition={false}
-    >
-      <p
-        className="fetch-error"
-      >
-        Please enter a valid search URL
-      </p>
-    </If>
     <form>
       <label>
         Enter API URL:
